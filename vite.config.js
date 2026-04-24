@@ -5,5 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/conference-website/', // Change 'conference-website' to your actual GitHub repository name if different!
+  base: '/Digital_health/', // Using the actual repository name
 })
