@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-50 text-slate-800 antialiased;
+  background-image: linear-gradient(to bottom, #eef6ff 0%, #ffffff 42%, #f8fbff 100%);
+}
+
+.section-shell {
+  @apply py-16 md:py-20 border-t border-blue-100/70;
+}
+
+.panel {
+  @apply rounded-2xl border border-blue-100 bg-white/95 shadow-[0_16px_40px_-24px_rgba(17,79,145,0.45)];
+}
