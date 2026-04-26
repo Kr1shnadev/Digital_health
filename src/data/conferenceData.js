@@ -17,8 +17,8 @@ export const conferenceData = {
   navItems: [
     { id: "hero", label: "Home" },
     { id: "about", label: "About" },
-    { id: "committee", label: "Committee" },
     { id: "speakers", label: "Chief Guest & Speakers" },
+    { id: "committee", label: "Committee" },
     { id: "schedule", label: "Schedule" },
     { id: "guidelines", label: "Competition Guidelines" },
     { id: "registration", label: "Registration" },

@@ -6,7 +6,7 @@ export function RegistrationSection({ registration }) {
     <SectionWrapper id="registration" className="bg-gradient-to-b from-blue-50/60 to-transparent text-center">
       <div className="mx-auto max-w-3xl panel p-8 md:p-12">
         <h2 className="font-['Poppins'] text-3xl font-semibold text-slate-900 md:text-4xl">
-          Registration Fees
+          Register Now
         </h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
           {registration.fees.map((feeData) => (

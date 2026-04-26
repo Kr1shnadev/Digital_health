@@ -8,14 +8,14 @@ export function GuidelinesSection({ guidelines }) {
     <SectionWrapper id="guidelines" className="bg-slate-50/50">
       <div className="mx-auto max-w-4xl text-center">
         <h2 className="font-['Poppins'] text-3xl font-semibold text-blue-950 md:text-4xl">
-          Download Guidelines
+          Competition Guidelines
         </h2>
-        
+
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {guidelines.map((item, idx) => (
-            <a 
-              key={idx} 
-              href={`${import.meta.env.BASE_URL}${item.file.replace(/^\//, '')}`} 
+            <a
+              key={idx}
+              href={`${import.meta.env.BASE_URL}${item.file.replace(/^\//, '')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="panel flex flex-col items-center p-6 text-center transition hover:-translate-y-1 hover:shadow-md"
