@@ -20,7 +20,7 @@ export function RegistrationSection({ registration }) {
         <p className="mt-6 text-slate-700">Includes Certificate and Lunch</p>
         <p className="mt-2 text-slate-600">{registration.note}</p>
         <div className="mt-8">
-          <PrimaryButton>Register Now</PrimaryButton>
+          <PrimaryButton href="https://docs.google.com/forms/d/e/1FAIpQLSduzXJDgAgHRtPnRezRAT2UIuF_fDUAc-N_xiZ4JRzXOl5AKA/viewform" target="_blank" rel="noopener noreferrer">Register Now</PrimaryButton>
         </div>
         <p className="mt-4 text-sm text-slate-500">Limited seats available</p>
       </div>

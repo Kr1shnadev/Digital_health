@@ -65,7 +65,7 @@ export function HeroSection({ data }) {
           </span>
         </div>
         <div className="mt-8 flex justify-center">
-          <PrimaryButton>Register Now</PrimaryButton>
+          <PrimaryButton href="https://docs.google.com/forms/d/e/1FAIpQLSduzXJDgAgHRtPnRezRAT2UIuF_fDUAc-N_xiZ4JRzXOl5AKA/viewform" target="_blank" rel="noopener noreferrer">Register Now</PrimaryButton>
         </div>
         <div className="mx-auto mt-10 grid max-w-xl grid-cols-2 gap-3 md:grid-cols-4">
           {Object.entries(countdown).map(([label, value]) => (

@@ -6,6 +6,7 @@ import { KeyThemesSection } from "./sections/KeyThemesSection";
 import { CommitteeSection } from "./sections/CommitteeSection";
 import { SpeakersSection } from "./sections/SpeakersSection";
 import { ScheduleSection } from "./sections/ScheduleSection";
+import { GuidelinesSection } from "./sections/GuidelinesSection";
 import { RegistrationSection } from "./sections/RegistrationSection";
 import { FooterSection } from "./sections/FooterSection";
 
@@ -29,6 +30,7 @@ function App() {
           schedule={conferenceData.schedule}
           parallelSession={conferenceData.parallelSession}
         />
+        <GuidelinesSection guidelines={conferenceData.guidelines} />
         <RegistrationSection registration={conferenceData.registration} />
       </main>
       <FooterSection contact={conferenceData.contact} />

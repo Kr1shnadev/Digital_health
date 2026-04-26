@@ -17,7 +17,7 @@ export function Navbar({ items }) {
         scrolled ? "border-b border-blue-100 bg-white/95 shadow-sm backdrop-blur" : "bg-transparent"
       }`}
     >
-      <nav className="mx-auto flex w-[92%] max-w-6xl items-center justify-between py-4">
+      <nav className="mx-auto flex w-full max-w-[1400px] items-center justify-between px-6 py-4 lg:px-8">
         <a
           href="#hero"
           className={`font-['Poppins'] text-sm font-semibold uppercase tracking-[0.14em] ${
