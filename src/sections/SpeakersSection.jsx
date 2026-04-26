@@ -45,7 +45,7 @@ function DignityCard({ person, badge }) {
         )}
         <h3 className="text-lg font-semibold text-blue-950 transition group-hover:text-blue-700">{person.name}</h3>
         <p className="mt-1 text-sm font-semibold text-blue-900">{person.designation}</p>
-        <div className="mt-4 inline-flex items-center text-sm font-semibold text-blue-600 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        <div className="mt-4 inline-flex items-center text-sm font-semibold text-blue-600 transition-colors duration-300 group-hover:text-blue-800">
           Click to read bio &rarr;
         </div>
       </motion.article>
@@ -144,7 +144,7 @@ function SpeakerCard({ speaker }) {
           {speaker.isKeynote ? "Keynote Address:" : "Topic:"}
         </p>
         <p className="mt-2 text-sm italic text-blue-900">{speaker.topic || "Topic to be announced"}</p>
-        <div className="mt-4 inline-flex items-center text-sm font-semibold text-blue-600 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        <div className="mt-4 inline-flex items-center text-sm font-semibold text-blue-600 transition-colors duration-300 group-hover:text-blue-800">
           Click to read bio &rarr;
         </div>
       </motion.article>

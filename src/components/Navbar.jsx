@@ -45,8 +45,8 @@ export function Navbar({ items }) {
               <a
                 href={`#${item.id}`}
                 onClick={() => setOpen(false)}
-                className={`block py-1 text-xs font-semibold uppercase tracking-[0.09em] transition ${
-                  scrolled ? "text-slate-600 hover:text-blue-900" : "text-white/90 hover:text-white"
+                className={`block py-2 text-sm font-semibold uppercase tracking-[0.09em] transition text-slate-700 hover:text-blue-900 md:py-1 md:text-xs ${
+                  scrolled ? "md:text-slate-600 md:hover:text-blue-900" : "md:text-white/90 md:hover:text-white"
                 }`}
               >
                 {item.label}
