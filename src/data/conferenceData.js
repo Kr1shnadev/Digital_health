@@ -56,6 +56,9 @@ export const conferenceData = {
       { name: "Shri.Amit P.Kore", designation: "Hon'ble Chairman KLE Society" },
       { name: "Dr.Prabhakar Kore", designation: "Chancellor KAHER" }
     ],
+    patrons: [
+      { name: "Dr. Sandeep Shrivastava", designation: "Hon’ble Vice Chancellor, KAHER" }
+    ],
     advisoryCouncil: [
       { name: "Dr. Vishwanath M.Pattanshetti", designation: "Registrar, KAHER" },
       { name: "Dr. Urmila Kagal", designation: "Director, SAHS KAHER" },
@@ -137,8 +140,8 @@ export const conferenceData = {
   contact: {
     department: "Department of Digital Health & Health Information Management",
     institution: "JNMC, Belagavi",
-    email: "placeholder",
-    phone: "placeholder",
+    email: "digihealth.kaher@gmail.com",
+    phone: "+91 6361344364",
   },
   guidelines: [
     {

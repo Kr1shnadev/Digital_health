@@ -37,6 +37,23 @@ export function CommitteeSection({ committee }) {
 
         <hr className="border-blue-200" />
 
+        {/* Patrons */}
+        {committee.patrons && committee.patrons.length > 0 && (
+          <>
+            <div>
+              <SectionTitle>Patrons</SectionTitle>
+              <div className="flex flex-col items-center gap-6 text-center">
+                {committee.patrons.map((person) => (
+                  <div key={person.name} className="py-2 sm:py-0">
+                    <MemberBlock name={person.name} designation={person.designation} />
+                  </div>
+                ))}
+              </div>
+            </div>
+            <hr className="border-blue-200" />
+          </>
+        )}
+
         {/* Advisory Council */}
         <div>
           <SectionTitle>Advisory Council</SectionTitle>
