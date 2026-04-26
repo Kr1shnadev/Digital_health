@@ -24,7 +24,8 @@ export function ScheduleSection({ schedule, parallelSession }) {
 
       {parallelSession?.length > 0 && (
         <>
-          <div className="relative mt-12 border-l-2 border-blue-200 pl-6 md:pl-8">
+          <h3 className="mt-12 mb-6 font-['Poppins'] text-2xl font-semibold text-slate-900">Parallel Session</h3>
+          <div className="relative border-l-2 border-blue-200 pl-6 md:pl-8">
             {parallelSession.map(([time, item], index) => (
               <motion.article
                 key={`parallel-${time}-${item}`}
