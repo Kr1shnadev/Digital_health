@@ -60,27 +60,35 @@ export const conferenceData = {
       { name: "Dr. Sandeep Shrivastava", designation: "Hon’ble Vice Chancellor, KAHER" }
     ],
     advisoryCouncil: [
+      // Row 1
       { name: "Dr. Vishwanath M.Pattanshetti", designation: "Registrar, KAHER" },
-      { name: "Dr. Urmila Kagal", designation: "Director, SAHS KAHER" },
-      { name: "Dr. Uma M.H", designation: "Officer on Special Duty-KAHER" },
       { name: "Dr. Rajesh S.Powar", designation: "Principal, JNMC, KAHER" },
-      { name: "Dr. Mubashir", designation: "Prof. & Head School of Public Health JNMC" },
       { name: "Dr. Chandra S.Metgud", designation: "COE, KAHER" },
-      { name: "Dr. Ramesh Paranjape", designation: "Distinguished Professor and Director BSRC KAHER" }
+      // Row 2
+      { name: "Dr. Urmila Kagal", designation: "Director, SAHS KAHER" },
+      { name: "Dr. Mubashir Angolkar", designation: "Prof. & Head School of Public Health, JNMC, KAHER" },
+      { name: "Dr. Ramesh Paranjape", designation: "Distinguished Professor and Director BSRC KAHER" },
+      // Row 3
+      { name: "Dr. Uma M.H", designation: "Officer on Special Duty-KAHER" },
+      null,
+      null
     ],
     organizingCommittee: [
       { title: "Organizing Chairman:", name: "Dr. Col. M. Dayananda", designation: "Medical Director, KLE's Prabhakar Kore Hospital and MRC" },
       { title: "Organizing Sectretary :", name: "Dr.Deepa Nair", designation: "Associate Professor & Head of Dept.of Digital Health - JNMC,KAHER" }
     ],
     members: [
+      // Row 1
       { name: "Dr. Nanda Kumar G.", designation: "Principal, KLE HMCT" },
-      { name: "Dr. Annapurna Kari", designation: "Lecturer, School of Public Health JNMC" },
-      { name: "Mr. Pranesh K", designation: "IT Adminstrator -KAHER" },
       { name: "Dr. Mayank Singh", designation: "Asst.Prof. Biostatistics-KAHER" },
-      { name: "Dr. Sushama Meled", designation: "Asst.Prof. Nutrition & Dietetics -JNMC" },
-      { name: "Mr. Sachin Vastrad", designation: "IT Technical Assistant - KAHER" },
       { name: "Dr. Shivanand Tanwashi", designation: "Senior Resident,Forensic Medicine-JNMC" },
+      // Row 2
+      { name: "Dr. Annapurna Kari", designation: "Lecturer, School of Public Health JNMC" },
+      { name: "Dr. Sushma Meled", designation: "Asst.Prof. Nutrition & Dietetics -JNMC" },
       { name: "Ms. Padmashree R", designation: "Tutor, Forensic Medicine JNMC" },
+      // Row 3
+      { name: "Mr. Pranesh K", designation: "IT Adminstrator -KAHER" },
+      { name: "Mr. Sachin Vastrad", designation: "IT Technical Assistant - KAHER" },
       { name: "Mr. Alex M Carvalho", designation: "Lecturer, Dept. of Biostatistics - KAHER" }
     ]
   },

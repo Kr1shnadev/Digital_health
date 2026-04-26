@@ -7,10 +7,7 @@ export function GuidelinesSection({ guidelines }) {
   return (
     <SectionWrapper id="guidelines" className="bg-slate-50/50">
       <div className="mx-auto max-w-4xl text-center">
-        <p className="text-xs font-bold uppercase tracking-[0.18em] text-blue-900">
-          Competition Guidelines
-        </p>
-        <h2 className="mt-3 font-['Poppins'] text-3xl font-semibold text-blue-950 md:text-4xl">
+        <h2 className="font-['Poppins'] text-3xl font-semibold text-blue-950 md:text-4xl">
           Download Guidelines
         </h2>
         

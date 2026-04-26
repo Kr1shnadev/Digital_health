@@ -5,8 +5,7 @@ export function RegistrationSection({ registration }) {
   return (
     <SectionWrapper id="registration" className="bg-gradient-to-b from-blue-50/60 to-transparent text-center">
       <div className="mx-auto max-w-3xl panel p-8 md:p-12">
-        <p className="text-xs font-bold uppercase tracking-[0.18em] text-blue-900">Registration</p>
-        <h2 className="mt-3 font-['Poppins'] text-3xl font-semibold text-slate-900 md:text-4xl">
+        <h2 className="font-['Poppins'] text-3xl font-semibold text-slate-900 md:text-4xl">
           Registration Fees
         </h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2">

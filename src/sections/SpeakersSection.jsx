@@ -211,8 +211,7 @@ function SpeakerCard({ speaker }) {
 export function SpeakersSection({ dignitaries, speakers }) {
   return (
     <SectionWrapper id="speakers">
-      <p className="text-xs font-bold uppercase tracking-[0.18em] text-blue-900">Chief Guest and Speakers</p>
-      <h2 className="mt-3 font-['Poppins'] text-3xl font-semibold text-blue-950 md:text-4xl">
+      <h2 className="font-['Poppins'] text-3xl font-semibold text-blue-950 md:text-4xl">
         Chief Guest and Speakers
       </h2>
 
@@ -230,8 +229,7 @@ export function SpeakersSection({ dignitaries, speakers }) {
       {/* Speakers grid */}
       {speakers?.length > 0 && (
         <>
-          <p className="mt-12 text-xs font-bold uppercase tracking-[0.13em] text-blue-900">Speakers</p>
-          <div className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {speakers.map((speaker) => (
               <SpeakerCard key={speaker.name} speaker={speaker} />
             ))}

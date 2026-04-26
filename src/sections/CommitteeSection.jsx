@@ -41,7 +41,7 @@ export function CommitteeSection({ committee }) {
         {committee.patrons && committee.patrons.length > 0 && (
           <>
             <div>
-              <SectionTitle>Patrons</SectionTitle>
+              <SectionTitle>Patron</SectionTitle>
               <div className="flex flex-col items-center gap-6 text-center">
                 {committee.patrons.map((person) => (
                   <div key={person.name} className="py-2 sm:py-0">
@@ -59,7 +59,9 @@ export function CommitteeSection({ committee }) {
           <SectionTitle>Advisory Council</SectionTitle>
           <div className="grid gap-8 bg-blue-50/50 p-6 rounded-xl sm:grid-cols-2 lg:grid-cols-3">
             {committee.advisoryCouncil.map((person) => (
-              <MemberBlock key={person.name} name={person.name} designation={person.designation} />
+              <div key={person?.name || Math.random()} className="w-full">
+                {person ? <MemberBlock name={person.name} designation={person.designation} /> : <div />}
+              </div>
             ))}
           </div>
         </div>
@@ -87,7 +89,9 @@ export function CommitteeSection({ committee }) {
           <SectionTitle>Members</SectionTitle>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {committee.members.map((person) => (
-              <MemberBlock key={person.name} name={person.name} designation={person.designation} />
+              <div key={person?.name || Math.random()} className="w-full">
+                {person ? <MemberBlock name={person.name} designation={person.designation} /> : <div />}
+              </div>
             ))}
           </div>
         </div>

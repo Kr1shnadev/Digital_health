@@ -4,8 +4,7 @@ import { SectionWrapper } from "../components/SectionWrapper";
 export function ScheduleSection({ schedule, parallelSession }) {
   return (
     <SectionWrapper id="schedule">
-      <p className="text-xs font-bold uppercase tracking-[0.18em] text-blue-900">Program Schedule</p>
-      <h2 className="mt-3 font-['Poppins'] text-3xl font-semibold text-slate-900 md:text-4xl">12 May 2026 Timeline</h2>
+      <h2 className="font-['Poppins'] text-3xl font-semibold text-slate-900 md:text-4xl">12 May 2026 Timeline</h2>
       <div className="relative mt-10 border-l-2 border-blue-200 pl-6 md:pl-8">
         {schedule.map(([time, item], index) => (
           <motion.article
@@ -25,8 +24,7 @@ export function ScheduleSection({ schedule, parallelSession }) {
 
       {parallelSession?.length > 0 && (
         <>
-          <p className="mt-12 text-xs font-bold uppercase tracking-[0.18em] text-blue-900">Parallel Session</p>
-          <div className="relative mt-6 border-l-2 border-blue-200 pl-6 md:pl-8">
+          <div className="relative mt-12 border-l-2 border-blue-200 pl-6 md:pl-8">
             {parallelSession.map(([time, item], index) => (
               <motion.article
                 key={`parallel-${time}-${item}`}
