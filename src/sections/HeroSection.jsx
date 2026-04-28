@@ -64,8 +64,9 @@ export function HeroSection({ data }) {
             {data.venue}
           </span>
         </div>
-        <div className="mt-8 flex justify-center">
+        <div className="mt-8 flex flex-col items-center justify-center">
           <PrimaryButton href="https://docs.google.com/forms/d/e/1FAIpQLSduzXJDgAgHRtPnRezRAT2UIuF_fDUAc-N_xiZ4JRzXOl5AKA/viewform" target="_blank" rel="noopener noreferrer">Register Now</PrimaryButton>
+          <p className="mt-2 text-xs font-medium text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.6)]">*CME CREDITS APPLIED</p>
         </div>
         <div className="mx-auto mt-10 grid max-w-xl grid-cols-2 gap-3 md:grid-cols-4">
           {Object.entries(countdown).map(([label, value]) => (

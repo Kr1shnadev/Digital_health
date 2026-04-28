@@ -13,6 +13,9 @@ export function RegistrationSection({ registration }) {
             <div key={feeData.type} className="rounded-xl border border-blue-200 bg-blue-50/50 p-6 shadow-sm">
               <h3 className="text-lg font-semibold text-blue-950">{feeData.type}</h3>
               <p className="mt-2 text-3xl font-bold text-blue-900">Rs. {feeData.amount}</p>
+              {feeData.type === 'Students' && (
+                <p className="mt-2 text-xs font-semibold text-blue-800 drop-shadow-[0_0_5px_rgba(30,58,138,0.4)]">*CME CREDITS APPLIED</p>
+              )}
             </div>
           ))}
         </div>
