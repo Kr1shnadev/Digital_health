@@ -10,11 +10,16 @@ export function RegistrationSection({ registration }) {
         </h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
           {registration.fees.map((feeData) => (
-            <div key={feeData.type} className="rounded-xl border border-blue-200 bg-blue-50/50 p-6 shadow-sm">
-              <h3 className="text-lg font-semibold text-blue-950">{feeData.type}</h3>
+            <div key={feeData.type} className="rounded-xl border border-blue-200 bg-blue-50/50 p-6 shadow-sm flex flex-col justify-center items-center h-full min-h-[160px]">
+              <h3 className="text-lg font-semibold text-blue-950 text-center">{feeData.type}</h3>
               <p className="mt-2 text-3xl font-bold text-blue-900">Rs. {feeData.amount}</p>
               {feeData.type === 'Students' && (
-                <p className="mt-2 text-xs font-semibold text-blue-800 drop-shadow-[0_0_5px_rgba(30,58,138,0.4)]">*CME CREDITS APPLIED</p>
+                <div className="mt-2 text-center">
+                  <p className="text-xs font-semibold text-blue-800 drop-shadow-[0_0_5px_rgba(30,58,138,0.4)]">*CME CREDITS APPLIED</p>
+                  <p className="mt-1 text-[12px] font-bold italic text-blue-800 drop-shadow-[0_0_5px_rgba(30,58,138,0.4)]">
+                    Doctors must register on or before 08 May 2026 to be eligible for CME credits.
+                  </p>
+                </div>
               )}
             </div>
           ))}

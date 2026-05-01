@@ -66,7 +66,12 @@ export function HeroSection({ data }) {
         </div>
         <div className="mt-8 flex flex-col items-center justify-center">
           <PrimaryButton href="https://docs.google.com/forms/d/e/1FAIpQLSduzXJDgAgHRtPnRezRAT2UIuF_fDUAc-N_xiZ4JRzXOl5AKA/viewform" target="_blank" rel="noopener noreferrer">Register Now</PrimaryButton>
-          <p className="mt-2 text-xs font-medium text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.6)]">*CME CREDITS APPLIED</p>
+          <div className="mt-4 text-center">
+            <p className="text-xs font-medium text-amber-400 drop-shadow-[0_0_8px_rgba(255,255,255,0.6)]">*CME CREDITS APPLIED</p>
+            <p className="mt-1 text-[13px] font-bold italic text-amber-400 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)]">
+              *Doctors must register on or before 08 May 2026 to be eligible for CME credits.
+            </p>
+          </div>
         </div>
         <div className="mx-auto mt-10 grid max-w-xl grid-cols-2 gap-3 md:grid-cols-4">
           {Object.entries(countdown).map(([label, value]) => (
