@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { AnnouncementBanner } from "./AnnouncementBanner";
 
 export function Navbar({ items }) {
   const [scrolled, setScrolled] = useState(false);
@@ -17,6 +18,9 @@ export function Navbar({ items }) {
         scrolled ? "border-b border-blue-100 bg-white/95 shadow-sm backdrop-blur" : "bg-transparent"
       }`}
     >
+      <div className={`transition-all duration-300 overflow-hidden ${scrolled ? 'max-h-0' : 'max-h-[100px]'}`}>
+        <AnnouncementBanner />
+      </div>
       <nav className="mx-auto flex w-full max-w-[1400px] items-center justify-between px-6 py-4 lg:px-8">
         <a
           href="#hero"
@@ -28,7 +32,7 @@ export function Navbar({ items }) {
         </a>
         <button
           className={`rounded-full px-4 py-2 text-sm font-semibold md:hidden ${
-            scrolled ? "border border-blue-200 text-blue-900" : "border border-white/50 text-white"
+            scrolled ? "border border-blue-200 text-blue-900" : "border border-white/50 text-white hover:bg-white/5"
           }`}
           onClick={() => setOpen((value) => !value)}
           aria-expanded={open}
@@ -45,8 +49,8 @@ export function Navbar({ items }) {
               <a
                 href={`#${item.id}`}
                 onClick={() => setOpen(false)}
-                className={`block py-2 text-sm font-semibold uppercase tracking-[0.09em] transition text-slate-700 hover:text-blue-900 md:py-1 md:text-xs ${
-                  scrolled ? "md:text-slate-600 md:hover:text-blue-900" : "md:text-white/90 md:hover:text-white"
+                className={`block py-2 text-sm font-semibold uppercase tracking-[0.09em] transition md:py-1 md:text-xs ${
+                  scrolled ? "md:text-slate-600 md:hover:text-blue-900 text-slate-700 hover:text-blue-900" : "md:text-white/80 md:hover:text-white text-slate-200 hover:text-white"
                 }`}
               >
                 {item.label}
