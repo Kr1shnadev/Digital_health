@@ -2,12 +2,37 @@ import React from "react";
 import { Megaphone } from "lucide-react";
 
 export const AnnouncementBanner = () => {
+  const messages = [
+    "📢  The last date for abstract submission for e-poster competition has been extended up to 8th May 2026.",
+    "📢  The last date for final submission for e-poster competition has been extended up to 11th May 2026.",
+  ];
+
   return (
-    <div className="bg-transparent border-b border-white/10 text-white/90 py-2.5 px-4 flex items-center justify-center relative w-full text-xs sm:text-sm">
-      <div className="flex flex-wrap items-center justify-center font-medium tracking-wide text-center gap-x-2">
-        <Megaphone className="w-3.5 h-3.5 sm:w-4 sm:h-4 inline-block shrink-0" />
-        <span>The last date for abstract submission for e-poster competition has been extended up to 8th May 2026.</span>
+    <div className="w-full overflow-hidden bg-red-600 py-2.5 text-white">
+      <div className="flex items-center gap-3 px-4">
+        <Megaphone className="h-4 w-4 shrink-0" />
+        <div className="overflow-hidden flex-1">
+          <div
+            className="flex gap-16 whitespace-nowrap"
+            style={{
+              animation: "marquee 28s linear infinite",
+            }}
+          >
+            {[...messages, ...messages].map((msg, i) => (
+              <span key={i} className="text-xs font-semibold tracking-wide sm:text-sm">
+                {msg}
+              </span>
+            ))}
+          </div>
+        </div>
       </div>
+
+      <style>{`
+        @keyframes marquee {
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+      `}</style>
     </div>
   );
 };

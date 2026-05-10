@@ -138,6 +138,11 @@ function SpeakerCard({ speaker }) {
         <div className="relative mb-4 overflow-hidden rounded-xl border border-blue-300">
           <img src={speaker.image} alt={speaker.name} className="h-56 w-full object-cover object-top transition duration-500 group-hover:scale-105" />
           <div className="absolute inset-0 bg-blue-900/0 transition duration-300 group-hover:bg-blue-900/10" />
+          {speaker.isVirtual && (
+            <span className="absolute bottom-2 left-2 inline-flex items-center gap-1 rounded-full bg-indigo-600/90 px-2.5 py-1 text-[11px] font-bold uppercase tracking-widest text-white shadow-lg backdrop-blur-sm">
+              🌐 Virtual
+            </span>
+          )}
         </div>
         <h3 className="text-lg font-semibold text-blue-950 transition group-hover:text-blue-700">{speaker.name}</h3>
         <p className="mt-3 text-sm font-semibold text-blue-900">
@@ -178,7 +183,14 @@ function SpeakerCard({ speaker }) {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-blue-950">{speaker.name}</h3>
-                  <p className="mt-1 font-medium text-blue-800">{speaker.designation}</p>
+                  <div className="mt-1 flex flex-wrap items-center gap-2">
+                    <p className="font-medium text-blue-800">{speaker.designation}</p>
+                    {speaker.isVirtual && (
+                      <span className="inline-flex items-center gap-1 rounded-full bg-indigo-600 px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-widest text-white">
+                        🌐 Virtual
+                      </span>
+                    )}
+                  </div>
                   <div className="mt-4 mb-6 rounded-xl bg-blue-50/50 p-4 border border-blue-100/50">
                     <p className="text-sm font-semibold text-blue-900">
                       {speaker.isKeynote ? "Keynote Address:" : "Topic:"}

@@ -113,6 +113,7 @@ export const conferenceData = {
       designation: "Speaker",
       topic: "From Health Records to Health Intelligence:- Data Quality in the Real World",
       image: mujeebImg,
+      isVirtual: true,
       description: "Mujeeb C. Kandy is a health information management professional with over 20 years of experience driving HIM transformations and data intelligence initiatives in healthcare. He holds a Master of Science in Health Information Management (USA), a Master of Applied Science in Medical Documentation (India), and certifications including RHIA, CPHQ, HL7, and a Postgraduate Certificate in Machine Learning and Artificial Intelligence.\n\nMujeeb actively integrates AI and advanced analytics into healthcare operations, focusing on predictive modeling, centralized health intelligence, clinical documentation improvement, and data governance. His work bridges artificial intelligence, health information standards, and practical implementation within large healthcare systems.\n\nAn elected Regional Director of IFHIMA, he contributes to global education, research, and AI focused discussions, and has spoken at international forums including AHIMA, AAPC Healthcon, and IMIA MedInfo. He is also a founding Vice President of Indian Association of Health Information Management and Health Informatics. He is passionate about responsible AI adoption, interoperability, and data-driven leadership, Mujeeb advocates for safe, ethical, and scalable AI solutions that enhance care quality, operational efficiency, and patient centered outcomes.",
     },
     {
