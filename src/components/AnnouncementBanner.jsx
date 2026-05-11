@@ -27,8 +27,8 @@ export const AnnouncementBanner = () => {
           0%   { transform: translateX(0); }
           100% { transform: translateX(-50%); }
         }
-        .marquee-track { animation: marquee 12s linear infinite; }
-        @media (min-width: 640px)  { .marquee-track { animation-duration: 20s; } }
+        .marquee-track { animation: marquee 6s linear infinite; }
+        @media (min-width: 640px)  { .marquee-track { animation-duration: 10s; } }
         @media (min-width: 1024px) { .marquee-track { animation-duration: 28s; } }
       `}</style>
     </div>
