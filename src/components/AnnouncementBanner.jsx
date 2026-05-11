@@ -12,12 +12,7 @@ export const AnnouncementBanner = () => {
       <div className="flex items-center gap-3 px-4">
         <Megaphone className="h-4 w-4 shrink-0" />
         <div className="overflow-hidden flex-1">
-          <div
-            className="flex gap-16 whitespace-nowrap"
-            style={{
-              animation: "marquee 28s linear infinite",
-            }}
-          >
+          <div className="marquee-track flex gap-16 whitespace-nowrap">
             {[...messages, ...messages].map((msg, i) => (
               <span key={i} className="text-xs font-semibold tracking-wide sm:text-sm">
                 {msg}
@@ -32,6 +27,9 @@ export const AnnouncementBanner = () => {
           0%   { transform: translateX(0); }
           100% { transform: translateX(-50%); }
         }
+        .marquee-track { animation: marquee 12s linear infinite; }
+        @media (min-width: 640px)  { .marquee-track { animation-duration: 20s; } }
+        @media (min-width: 1024px) { .marquee-track { animation-duration: 28s; } }
       `}</style>
     </div>
   );
