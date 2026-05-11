@@ -241,7 +241,7 @@ export function SpeakersSection({ dignitaries, speakers }) {
       {/* Speakers grid */}
       {speakers?.length > 0 && (
         <>
-          <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-12 grid gap-4 md:grid-cols-3 xl:grid-cols-5">
             {speakers.map((speaker) => (
               <SpeakerCard key={speaker.name} speaker={speaker} />
             ))}

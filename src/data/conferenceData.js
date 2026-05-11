@@ -2,7 +2,8 @@ import iranaImg from "../../Dr.Irana_M_Hittalamani.jpeg";
 import rajendraImg from "../../Dr.Rajendra_Pratap_Gupta.jpeg";
 import umashankarImg from "../../Dr.Umashankar Subramnyam.jpeg";
 import mujeebImg from "../../Mr.Mujeeb_C_kandi.jpeg";
-import vasanthImg from "../../vasanth_kumar.png";
+import umaNambiarImg from "../../Dr.Uma_Nambiar.jpeg";
+
 
 export const conferenceData = {
   title: "DIGITAL HEALTH DAY 2026",
@@ -45,10 +46,10 @@ export const conferenceData = {
   ],
   dignitaries: [
     {
-      name: "Dr. Vasantha Kumar K",
-      designation: "Director, Health and Family Welfare Services, Govt. of Karnataka",
-      image: vasanthImg,
-      description: "Dr. Vasanth Kumar K, Director of Health and Family Welfare Services, Government of Karnataka. Prior to this role, he served as the Deputy Director for eHealth, where he contributed significantly to advancing digital health initiatives across the state. His work in eHealth focused on strengthening health information systems, promoting digital integration, and supporting technology-driven healthcare delivery.\n\nWith extensive experience in both public health governance and digital health transformation, Dr. Vasanth Kumar plays a key role in:\n- Implementing major state and national health programs\n- Strengthening primary and secondary healthcare systems\n- Driving digital adoption in healthcare services\n- Coordinating initiatives under the National Health Mission (NHM)",
+      name: "Dr. Uma Nambiar",
+      designation: "CEO, IISc Medical School Foundation | Co-Founder & Chairperson, DHIA | Vice President, Telemedicine Society of India | Independent Director & Board Member, Hemas Group of Hospitals, Sri Lanka",
+      image: umaNambiarImg,
+      description: "A trained neurosurgeon and healthcare administrator with over forty years in the healthcare industry. An alumnus of Armed Forces Medical College Pune, Sree Chitra Tirunal Institute Trivandrum, and Faculty of Management Studies at Delhi, with international exposure at Beth Israel Institute for Neurology and Neurosurgery, New York and Necker Enfant Malade, Paris.\n\nShe has worked across different hospitals in India and Africa as a Surgical Neuro-oncologist, as well as in CXO roles in leading corporate hospitals in India. She has commissioned greenfield hospitals and re-engineered brownfield hospitals across many geographies in India and abroad.\n\nShe has been a Special Technical Advisor to the Ministry of Health in Djibouti, East Africa and a consultant in Digital Health to a private hospital group in Botswana.\n\nShe is an independent board director for Hemas Hospital Group in Sri Lanka and IIHMR (Indian Institute of Health Management Research) in Bangalore. She is engaged in the capacity of board director, advisor, and mentor to multiple healthcare organizations including healthcare enterprises as well as health-tech startups.\n\nHer passion lies in the use of Digital Technology and mentoring students from across the healthcare segment. She is also an honorary professor at Jawaharlal Nehru Centre for Advanced Scientific Research.",
     },
   ],
   committee: {
@@ -102,7 +103,15 @@ export const conferenceData = {
       description: "Dr. Rajendra Pratap Gupta is a leading global voice in Health and has done pioneering work in Health, working with various multi-lateral bodies and governments. He has been interviewed by Harvard Business Review and has been featured in the world’s Top 50 Thinkers Podcast by Deloitte & Thinkers 50, and was conferred the Global Impact Award by Personal Connected Health Alliance (HIMSS) in 2018 in Boston. As an AI researcher, he is the creator of the Functional AI Pyramid - AI Maturity Model.\n\nHis book ‘Digital Health - Truly Transformational’ remains the global bestseller and is the most comprehensive book on Digital Health ever written. He is also a public policy expert with vast experience in policymaking across sectors, and he was instrumental in drafting the election manifesto (all sectors) for the BJP in 2014. He has played a key role in drafting the National Health Policy-2017, National Digital Health Mission, the National Education Policy-2020, and the Viksit Bharat Abhiyan (Developed India Mission) - which is the flagship program of the Modi Government for New India.\n\nHe has been invited by all multi-lateral bodies: The United Nations, ITU, FAO, WHO, World Bank, Asian Development Bank, World Economic Forum, and the Commonwealth. Besides, he has been invited by governments of the United States of America, the United Kingdom, Govt. of Japan, Algeria, Finland, Norway, Ethiopia & Bangladesh, and also by the Ministry of Health, Ministry of Human Resource Development, Ministry of Labour and Employment & The Planning Commission – Government of India, for his views on a diverse range of topics.\n\nDr. Rajendra has been involved in major global initiatives and holds several key positions in the UN bodies. He leads three dynamic coalitions at the United Nations’ Internet Governance Forum: DC on Digital Economy, Environment, and Digital Health, and Chairman - Commonwealth AI Consortium (Capacity Building).\n\nHe has been a co-author of several reports at the World Health Organisation (WHO); served on the guidelines development group for Digital Health at the WHO; invited by the Prime Minister’s office of Bangladesh to help draft the AI Policy. He is the former advisor to the Union Health Minister, Government of India. He was nominated by the World Economic Forum on the Global Agenda Council for Digital Health. He has authored five books on a diverse range of topics and delivered over 300 talks around the world.\n\nHe is the chairman of the Digital First Foundation, the Co-chair of the Global Commission for 21st Century Healthcare, chairman of the Academy of Digital Health Sciences and the Consortium of Innovative Healthcare Universities (CIHU) and also, chairs the Medical Education Summit held on the sidelines of the Global Digital Health Summit every year.",
     },
     {
-      name: "Dr. Umashankar Subramnyam",
+      name: "Dr. Uma Nambiar",
+      designation: "Keynote Speaker",
+      topic: "Preparing the Healthcare Workforce for the Digital Era",
+      image: umaNambiarImg,
+      isKeynote: true,
+      description: "A trained neurosurgeon and healthcare administrator with over forty years in the healthcare industry. An alumnus of Armed Forces Medical College Pune, Sree Chitra Tirunal Institute Trivandrum, and Faculty of Management Studies at Delhi, with international exposure at Beth Israel Institute for Neurology and Neurosurgery, New York and Necker Enfant Malade, Paris.\n\nShe has worked across different hospitals in India and Africa as a Surgical Neuro-oncologist, as well as in CXO roles in leading corporate hospitals in India. She has commissioned greenfield hospitals and re-engineered brownfield hospitals across many geographies in India and abroad.\n\nShe has been a Special Technical Advisor to the Ministry of Health in Djibouti, East Africa and a consultant in Digital Health to a private hospital group in Botswana.\n\nShe is an independent board director for Hemas Hospital Group in Sri Lanka and IIHMR (Indian Institute of Health Management Research) in Bangalore. She is engaged in the capacity of board director, advisor, and mentor to multiple healthcare organizations including healthcare enterprises as well as health-tech startups.\n\nHer passion lies in the use of Digital Technology and mentoring students from across the healthcare segment. She is also an honorary professor at Jawaharlal Nehru Centre for Advanced Scientific Research.",
+    },
+    {
+      name: "Dr. Umashankar Subramanian",
       designation: "Speaker",
       topic: "Healthcare without Walls: The Telemedicine Revolution",
       image: umashankarImg,
